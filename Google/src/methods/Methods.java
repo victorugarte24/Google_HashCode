@@ -26,6 +26,7 @@ public class Methods {
 	public static void main(String[] args) {
 		Methods m = new Methods();
 		m.output();
+		System.out.println("g");
 
 	}
 
