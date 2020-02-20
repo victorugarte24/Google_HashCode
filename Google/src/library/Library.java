@@ -1,19 +1,39 @@
 package library;
 
+import java.util.ArrayList;
+
 public class Library {
 	
 	int ID; //From 0 to total-1
 	int number_books;
 	int days_register;
 	int number_books_per_day;
+	ArrayList<Integer> books = new ArrayList<Integer>();
 	
-	public Library(int ID, int number_books, int days_register, int number_books_per_day){
+	public Library(int ID, int number_books, int days_register, int number_books_per_day, ArrayList<Integer> books){
 		this.ID = ID;
 		this.number_books = number_books;
 		this.days_register = days_register;
 		this.number_books_per_day = number_books_per_day;
+		this.books = books;
 	}
 	
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
+	public ArrayList<Integer> getBooks() {
+		return books;
+	}
+
+	public void setBooks(ArrayList<Integer> books) {
+		this.books = books;
+	}
+
 	public int getNumber_books() {
 		return number_books;
 	}
