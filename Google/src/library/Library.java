@@ -10,14 +10,24 @@ public class Library {
 	int number_books;
 	int days_register;
 	int number_books_per_day;
+	int book;
+	public int getBook() {
+		return book;
+	}
+
+	public void setBook(int book) {
+		this.book = book;
+	}
+
 	ArrayList<Book> books = new ArrayList<Book>();
 	
-	public Library(int ID, int number_books, int days_register, int number_books_per_day, ArrayList<Book> books){
+	public Library(int ID, int number_books, int days_register, int number_books_per_day, ArrayList<Book> books,int book){
 		this.ID = ID;
 		this.number_books = number_books;
 		this.days_register = days_register;
 		this.number_books_per_day = number_books_per_day;
 		this.books = books;
+		this.book = book;
 	}
 	
 	public int getID() {

@@ -56,7 +56,7 @@ public class Text {
 	
 	public static void formatsplit(ArrayList<ArrayList<Integer>> file) {
 		
-		int idlib=0;
+		int idlib=1;
 		for(int i=0; i<file.size(); i++ ) {
 			
 			if(i==0){
@@ -71,7 +71,7 @@ public class Text {
 					score.add(file.get(i).get(j));
 				}
 			}if(i>1) {
-				Library library = new Library(idlib, file.get(i).get(0), file.get(i).get(1), file.get(i).get(2), null);
+				Library library = new Library(idlib, file.get(i).get(0), file.get(i).get(1), file.get(i).get(2), null,0);
 				if(i%2!=0) {
 					ArrayList<Integer> lista = file.get(i);
 					ArrayList<Book> libros = new ArrayList<Book>();
@@ -95,13 +95,13 @@ public class Text {
 						
 					}
 					library.setBooks(libros);
+					libraries.add(library);
 					
-					
-
+idlib++;
 				}
-
+				
 			}
-
+			
 		}
 
 
