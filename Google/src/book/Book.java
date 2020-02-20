@@ -3,19 +3,19 @@ package book;
 public class Book {
 	
 	int ID; //From 0 to total-1
-	int Rate;
+	int Score;
 	
-	public Book(int ID, int Rate) {
+	public Book(int ID, int Score) {
 		this.ID = ID;
-		this.Rate = Rate;
+		this.Score = Score;
 	}
 
-	public int getRate() {
-		return Rate;
+	public int getScore() {
+		return Score;
 	}
 
-	public void setRate(int rate) {
-		Rate = rate;
+	public void setScore(int rate) {
+		Score = Score;
 	}
 
 	public int getID() {
