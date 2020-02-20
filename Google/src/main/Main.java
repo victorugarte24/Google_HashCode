@@ -14,6 +14,7 @@ public class Main {
 	static int librarys;
 	static int dayscan;
 	static ArrayList<Integer> id = new ArrayList<>();
+	
 	public static void maxscore(int dayscan, ArrayList<Library> libraries, ArrayList<Integer> score ) {
 		ArrayList<Integer> score1 = new ArrayList<>();
 		int sum = 0;
@@ -49,8 +50,8 @@ public class Main {
 		}
 		
 	
-		dayscan =dayscan -libraries.get(1).getDays_register();
-		id.add(libraries.get(1).getID());
+		dayscan =dayscan -libraries.get(0).getDays_register();
+		id.add(libraries.get(0).getID());
 		
 	}
 
