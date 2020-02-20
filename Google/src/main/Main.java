@@ -20,16 +20,12 @@ public class Main {
 			int daysavailable =books % booksday;
 			if( (result - daysavailable) > 0) {
 				int havebook=daysavailable * booksday;
-				ordenar(libraries.get(i).getBooks());
+				
 			}
 			}
 		
 	}
-	public static void ordenar(ArrayList<Integer> libros) {
-		Collections.sort(libros, Collections.reverseOrder());
-		System.out.println(libros);
-		
-	}
+	
 	
 public static void main(String[] args) {
 		

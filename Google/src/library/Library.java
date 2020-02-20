@@ -2,15 +2,17 @@ package library;
 
 import java.util.ArrayList;
 
+import book.Book;
+
 public class Library {
 	
 	int ID; //From 0 to total-1
 	int number_books;
 	int days_register;
 	int number_books_per_day;
-	ArrayList<Integer> books = new ArrayList<Integer>();
+	ArrayList<Book> books = new ArrayList<Book>();
 	
-	public Library(int ID, int number_books, int days_register, int number_books_per_day, ArrayList<Integer> books){
+	public Library(int ID, int number_books, int days_register, int number_books_per_day, ArrayList<Book> books){
 		this.ID = ID;
 		this.number_books = number_books;
 		this.days_register = days_register;
@@ -26,12 +28,12 @@ public class Library {
 		ID = iD;
 	}
 
-	public ArrayList<Integer> getBooks() {
+	public ArrayList<Book> getBooks() {
 		return books;
 	}
 
-	public void setBooks(ArrayList<Integer> books) {
-		this.books = books;
+	public void setBooks(ArrayList<Book> libros) {
+		this.books = libros;
 	}
 
 	public int getNumber_books() {
